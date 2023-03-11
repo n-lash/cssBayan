@@ -1,0 +1,83 @@
+body {
+    background-color: #dfedcb;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+/* .accordion:hover {
+    cursor: pointer;
+} */
+/* .accordion:hover ~ .accordion__label::after{
+    display: block;
+} */
+
+.accordion__item {
+    /* border: 1px solid red; */
+}
+
+.accordion__label {
+    display: block;
+    cursor: pointer;
+    border-top: 1px solid blue;
+    transition: background 0.2s ease;
+    position: relative;
+    padding: 15px 30px 15px 15px;
+}
+
+.accordion__label::after {
+   /* content: url('../../media/warning.svg'); */
+    content: url(../cssBayan/img/plus_icon.svg);
+    /* display: block; */
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    /* background-color: transparent; */
+    display: none;
+}
+
+.accordion__label:hover {
+    background-color: #98f7ae;
+}
+
+.accordion__label:hover::after {
+    display: block;
+}
+
+
+
+
+.accordion__input {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.accordion__input:checked ~ .accordion__content {
+    display: block;
+}
+
+.accordion__input:checked ~ .accordion__label {
+    background-color: #98f7ae;
+}
+
+.accordion__content {
+    padding: 0 20px;
+    display: none;
+}
+
+
+.accordion__title {}
+
+.accordion__text {}

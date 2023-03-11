@@ -4,25 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>CSS Bayan</title>
 </head>
 <body>
-    <div>
+    <div class="wrapper">
         <h1>CSS Bayan</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
 
         <div class="accordion">
-            <div>
-                <input type="checkbox" name="tab-1" id="tab-1">
-                <label for="tab-1">Keep calm and carry on</label>
-               
-                <div class="tab-content">
-                    <h2>Content Title</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat et a vel iure incidunt qui beatae odit facere odio! Fugiat provident sed recusandae velit, voluptatum eius nam tempore praesentium doloribus pariatur saepe unde laboriosam. Amet natus eligendi saepe autem nisi beatae maxime earum in consectetur asperiores voluptatibus delectus, ab sunt?</p>p>
+            <div class="accordion__item">
+                <input class="accordion__input" type="checkbox" name="tab-1" id="tab-1">
+                <label class="accordion__label" for="tab-1">You can't just copy and paste CSS</label>
+                <div class="accordion__content">
+                    <h2 class="accordion__title">Content Title</h2>
+                    <img src="https://picsum.photos/300/200" alt="random foto">
+                    <p class="accordion__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat et a vel iure incidunt qui beatae odit facere odio! Fugiat provident sed recusandae velit, voluptatum eius nam tempore praesentium doloribus pariatur saepe unde laboriosam. Amet natus eligendi saepe autem nisi beatae maxime earum in consectetur asperiores voluptatibus delectus, ab sunt?</p>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <input class="accordion__input" type="checkbox" name="tab-2" id="tab-2">
+                <label class="accordion__label" for="tab-2">Keep calm and carry on</label>
+                <div class="accordion__content">
+                    <h2 class="accordion__title">Content Title</h2>
+                    <img src="https://picsum.photos/300/200?grayscale" alt="random foto">
+                    <p class="accordion__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat et a vel iure incidunt qui beatae odit facere odio! Fugiat provident sed recusandae velit, voluptatum eius nam tempore praesentium doloribus pariatur saepe unde laboriosam. Amet natus eligendi saepe autem nisi beatae maxime earum in consectetur asperiores voluptatibus delectus, ab sunt?</p>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <input class="accordion__input" type="checkbox" name="tab-3" id="tab-3">
+                <label class="accordion__label" for="tab-3">Work-life balance</label>
+                <div class="accordion__content">
+                    <h2 class="accordion__title">Content Title</h2>
+                    <img src="https://picsum.photos/300/200" alt="random foto">
+                    <p class="accordion__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat et a vel iure incidunt qui beatae odit facere odio! Fugiat provident sed recusandae velit, voluptatum eius nam tempore praesentium doloribus pariatur saepe unde laboriosam. Amet natus eligendi saepe autem nisi beatae maxime earum in consectetur asperiores voluptatibus delectus, ab sunt?</p>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <input class="accordion__input" type="checkbox" name="tab-4" id="tab-4">
+                <label class="accordion__label" for="tab-4">Dude, where is JS</label>
+                <div class="accordion__content">
+                    <h2 class="accordion__title">Content Title</h2>
+                    <img src="https://picsum.photos/300/200" alt="random foto">
+                    <p class="accordion__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat et a vel iure incidunt qui beatae odit facere odio! Fugiat provident sed recusandae velit, voluptatum eius nam tempore praesentium doloribus pariatur saepe unde laboriosam. Amet natus eligendi saepe autem nisi beatae maxime earum in consectetur asperiores voluptatibus delectus, ab sunt?</p>
                 </div>
             </div>
         </div>
     </div>
-    
+    <script src="https://kit.fontawesome.com/0829be64f7.js" crossorigin="anonymous"></script>
 </body>
 </html>
